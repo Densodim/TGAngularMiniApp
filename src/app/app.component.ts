@@ -1,12 +1,19 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {UpperCasePipe} from '@angular/common';
+import {RouterOutlet} from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [
+    UpperCasePipe,
+    RouterOutlet
+  ],
   templateUrl: './app.component.html',
+  standalone: true,
   styleUrl: './app.component.less'
 })
 export class AppComponent {
   title = 'AngularApp';
+
 }
