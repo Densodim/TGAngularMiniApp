@@ -1,1 +1,87 @@
+@padding: 16px;
+@border: 10px solid black;
+@cursor: pointer;
+@background: var(--tg-theme-secondary-bg-color);
+
+* {
+  background-color: var(--tg-theme-bg-color);
+  color: var(--tg-theme-text-color);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+
+button {
+  background: var(--tg-theme-button-color);
+  color: var(--tg-theme-button-text-color);
+}
+
+a {
+  color: var(--tg-theme-link-color);
+
+  &:hover {
+    color: var(--tg-theme-hint-color);
+  }
+}
+
+section {
+  .center;
+  padding: @padding;
+  flex-direction: column;
+  background-color: var(--tg-theme-section-bg-color);
+}
+
+.md {
+  margin-bottom: @padding;
+}
+
+hr {
+  background: var(--tg-theme-hint-color);
+  margin-bottom: @padding;
+}
+
+.form-control {
+  width: 100%;
+  height: 60px;
+  background: @background;
+  resize: none;
+  font-family: inherit;
+  padding: 8px;
+  border: @border;
+}
+
+.products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.product-item {
+  overflow: hidden;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.3);
+  border: @border;
+  margin-bottom: @padding;
+  cursor: @cursor;
+}
+
+.product-image {
+  .center;
+  background: @background;
+
+  &img {
+    display: block;
+    padding: 10px;
+  }
+}
+
+.product-info {
+  padding: @padding;
+}
+
+
 /* You can add global styles to this file, and also import other style files */
